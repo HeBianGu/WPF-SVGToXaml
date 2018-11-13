@@ -99,8 +99,6 @@ namespace HeBianGu.Product.SvgConvertTool
             this.cv_pathdraw.Width = svg.Width;
             this.cv_pathdraw.Height = svg.Height;
 
-            this.vb_pathdrawing.Child = this.cv_pathdraw;
-
             drawingAction = l =>
             {
                 foreach (var item in l.Children)

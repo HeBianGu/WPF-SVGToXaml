@@ -45,14 +45,18 @@
                 <Image x:Name="image_svg"/>
             </TabItem>
             <TabItem Header="生成Path With Drawing">
-                <Viewbox x:Name="vb_pathdrawing">
-                    <Canvas x:Name="cv_pathdraw"/>
-                </Viewbox>
+                <ScrollViewer>
+                    <Viewbox>
+                        <Canvas x:Name="cv_pathdraw" />
+                    </Viewbox>
+                </ScrollViewer>
             </TabItem>
             <TabItem Header="生成Data">
-                <Viewbox x:Name="vb_data">
-                    <Canvas x:Name="cv_data" />
-                </Viewbox>
+                <ScrollViewer>
+                    <Viewbox >
+                        <Canvas x:Name="cv_data"/>
+                    </Viewbox>
+                </ScrollViewer>
             </TabItem>
             <TabItem Header="生成Xaml代码">
                 <ScrollViewer>
