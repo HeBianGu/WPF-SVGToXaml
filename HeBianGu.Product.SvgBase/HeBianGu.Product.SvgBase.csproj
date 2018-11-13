@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F97ED500-FD8D-46C4-A8EF-82AB54A7F154}</ProjectGuid>
+    <OutputType>library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HeBianGu.Product.SvgBase</RootNamespace>
+    <AssemblyName>HeBianGu.Product.SvgBase</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="DataParses\SVGDataParse_SVGBaseLineShift.cs" />
+    <Compile Include="DataParses\SVGDataParse_SVGBrush.cs" />
+    <Compile Include="DataParses\SVGDataParse_SVGClipPath.cs" />
+    <Compile Include="DataParses\SVGDataParse_SVGColor.cs" />
+    <Compile Include="DataParses\SVGDataParse_SVGDashArray.cs" />
+    <Compile Include="DataParses\SVGDataParse_SVGDisplay.cs" />
+    <Compile Include="DataParses\SVGDataParse_SVGDouble.cs" />
+    <Compile Include="DataParses\SVGDataParse_SVGFillRule.cs" />
+    <Compile Include="DataParses\SVGDataParse_SVGFontFamily.cs" />
+    <Compile Include="DataParses\SVGDataParse_SVGFontStyle.cs" />
+    <Compile Include="DataParses\SVGDataParse_SVGFontWeight.cs" />
+    <Compile Include="DataParses\SVGDataParse_SVGGradientUnits.cs" />
+    <Compile Include="DataParses\SVGDataParse_SVGLineCap.cs" />
+    <Compile Include="DataParses\SVGDataParse_SVGLineJoin.cs" />
+    <Compile Include="DataParses\SVGDataParse_SVGMask.cs" />
+    <Compile Include="DataParses\SVGDataParse_SVGPathData.cs" />
+    <Compile Include="DataParses\SVGDataParse_SVGPatternUnits.cs" />
+    <Compile Include="DataParses\SVGDataParse_SVGPointArray.cs" />
+    <Compile Include="DataParses\SVGDataParse_SVGSpreadMethod.cs" />
+    <Compile Include="DataParses\SVGDataParse_SVGString.cs" />
+    <Compile Include="DataParses\SVGDataParse_SVGTextAnchor.cs" />
+    <Compile Include="DataParses\SVGDataParse_SVGTextDecoration.cs" />
+    <Compile Include="DataParses\SVGDataParse_SVGTransform.cs" />
+    <Compile Include="Datas\SVGBaseLineShift.cs" />
+    <Compile Include="Datas\SVGBrush.cs" />
+    <Compile Include="Datas\SVGBrushExpand.cs" />
+    <Compile Include="Datas\SVGClipPath.cs" />
+    <Compile Include="Datas\SVGColor.cs" />
+    <Compile Include="Datas\SVGDashArray.cs" />
+    <Compile Include="Datas\SVGDisplay.cs" />
+    <Compile Include="Datas\SVGDouble.cs" />
+    <Compile Include="Datas\SVGDoubleExpand.cs" />
+    <Compile Include="Datas\SVGFillRule.cs" />
+    <Compile Include="Datas\SVGFontFamily.cs" />
+    <Compile Include="Datas\SVGFontStyle.cs" />
+    <Compile Include="Datas\SVGFontWeight.cs" />
+    <Compile Include="Datas\SVGGradientUnits.cs" />
+    <Compile Include="Datas\SVGLineCap.cs" />
+    <Compile Include="Datas\SVGLineJoin.cs" />
+    <Compile Include="Datas\SVGMask.cs" />
+    <Compile Include="Datas\SVGPathData.cs" />
+    <Compile Include="Datas\SVGPatternUnits.cs" />
+    <Compile Include="Datas\SVGPointArray.cs" />
+    <Compile Include="Datas\SVGSpreadMethod.cs" />
+    <Compile Include="Datas\SVGString.cs" />
+    <Compile Include="Datas\SVGStringExpand.cs" />
+    <Compile Include="Datas\SVGTextAnchor.cs" />
+    <Compile Include="Datas\SVGTextDecoration.cs" />
+    <Compile Include="Datas\SVGTransform.cs" />
+    <Compile Include="Elements\Container\ClipPath.cs" />
+    <Compile Include="Elements\Container\Defs.cs" />
+    <Compile Include="Elements\Container\LinearGradient.cs" />
+    <Compile Include="Elements\Container\Mask.cs" />
+    <Compile Include="Elements\Container\RadialGradient.cs" />
+    <Compile Include="Elements\DrawingContainer\G.cs" />
+    <Compile Include="Elements\DrawingContainer\Marker.cs" />
+    <Compile Include="Elements\DrawingContainer\SVG.cs" />
+    <Compile Include="Elements\DrawingContainer\Use.cs" />
+    <Compile Include="Elements\DrawingElement\Circle.cs" />
+    <Compile Include="Elements\DrawingElement\Ellipse.cs" />
+    <Compile Include="Elements\DrawingElement\Line.cs" />
+    <Compile Include="Elements\DrawingElement\Path.cs" />
+    <Compile Include="Elements\DrawingElement\Polygon.cs" />
+    <Compile Include="Elements\DrawingElement\Polyline.cs" />
+    <Compile Include="Elements\DrawingElement\Rect.cs" />
+    <Compile Include="Elements\DrawingElement\Text.cs" />
+    <Compile Include="Elements\Element\Stop.cs" />
+    <Compile Include="Elements\Element\Symbol.cs" />
+    <Compile Include="Elements\Element\Tspan.cs" />
+    <Compile Include="Exceptions\SVGDataParseException.cs" />
+    <Compile Include="Exceptions\SVGNotRegisterAttributeException.cs" />
+    <Compile Include="ISVGBrush.cs" />
+    <Compile Include="ISVGClipPath.cs" />
+    <Compile Include="ISVGDataParse.cs" />
+    <Compile Include="ISVGMask.cs" />
+    <Compile Include="SVGAttribute.cs" />
+    <Compile Include="SVGData.cs" />
+    <Compile Include="SVGDataParse.cs" />
+    <Compile Include="SVGDrawingContainerElement.cs" />
+    <Compile Include="SVGDrawingElement.cs" />
+    <Compile Include="SVGElement.cs" />
+    <Compile Include="SVGNames.cs" />
+    <Compile Include="SVGNamespaces.cs" />
+    <Compile Include="SVGObject.cs" />
+    <Compile Include="SVGReader.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
