@@ -20,7 +20,7 @@ namespace HeBianGu.Product.SvgConvertTool
     /// <summary>
     /// MainWindow.xaml 的交互逻辑
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow
     {
         public MainWindow()
         {
@@ -148,7 +148,10 @@ namespace HeBianGu.Product.SvgConvertTool
                     if (item is GeometryDrawing)
                     {
                         GeometryDrawing gd = item as GeometryDrawing;
-                        this.tx_code.Text += $"<Path Stroke=\"{gd.Pen?.Brush}\" Fill=\"{gd.Brush}\" Data=\"{gd.Geometry.ToString()}\"/>"+ Environment.NewLine;
+
+                        string line = $"<Path Stroke=\"{gd.Pen?.Brush}\" Fill=\"{gd.Brush}\" Data=\"{gd.Geometry.ToString()}\"/>";
+
+                        this.tx_code.Text += line.Replace($"Stroke =\"\"","").Replace($"Fill =\"\"", "") + Environment.NewLine;
                     }
                     else if (item is DrawingGroup)
                     {
